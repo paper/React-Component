@@ -108,5 +108,34 @@
     );
   </script>
   
+  
+  <br />
+  
+  <h3>React Demo(click)(ReactContendDemo):</h3>
+  <div id="example3"></div>
+  <script type="text/jsx">
+    var NAVS3 = ["tab 1", "tab 2", "tab 3", "tab 4"];
+    
+    var ReactContendDemo = React.createClass({
+      render : function(){
+        return (
+          <div className="demo">
+            <p>123455</p>
+            <p>acbdsds</p>
+          </div>
+        )
+      }
+    });
+    
+    var ReactContendDemoHtml = <ReactContendDemo />;
+    
+    var CONTENTS3 = [ReactContendDemoHtml, "内容2", "内容3", "内容4"];
+    
+    React.render(
+      <Tab navs={NAVS3} contents={CONTENTS3} />, 
+      document.getElementById("example3")
+    );
+  </script>
+  
 </body>
 </html>

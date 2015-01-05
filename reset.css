@@ -6,4 +6,4 @@ a{color:#003399; text-decoration:none;}
 .clearfix{content:"";display:table;clear:both;height:0;}
 .hidden{display:none;}
 .clear{clear:both;}
-br{clear:both;display:block;height:1px;}
+br{clear:both;display:block;height:1px;margin-bottom:10px;}

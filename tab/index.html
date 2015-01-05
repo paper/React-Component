@@ -42,7 +42,7 @@
 </head>
 <body>
   
-  <h3>Example:</h3>
+  <h3>Example</h3>
   <div class="mod-tab">
     
     <div class="mod-tab-nav">
@@ -78,7 +78,7 @@
   
   <script type="text/jsx" src="tab.js"></script>
   
-  <h3>React Demo(mouseover):</h3>
+  <h3>React Demo(mouseover)</h3>
   <div id="example"></div>
   <script type="text/jsx">
     var NAVS = ["tab 1", "tab 2", "tab 3", "tab 4"];
@@ -96,7 +96,7 @@
   
   <br />
   
-  <h3>React Demo(click):</h3>
+  <h3>React Demo(click)</h3>
   <div id="example2"></div>
   <script type="text/jsx">
     var NAVS2 = ["tab 1", "tab 2", "tab 3", "tab 4"];
@@ -111,12 +111,12 @@
   
   <br />
   
-  <h3>React Demo(click)(ReactContendDemo):</h3>
+  <h3>React Demo(click)(ReactContentDemo)</h3>
   <div id="example3"></div>
   <script type="text/jsx">
     var NAVS3 = ["tab 1", "tab 2", "tab 3", "tab 4"];
     
-    var ReactContendDemo = React.createClass({
+    var ReactContentDemo = React.createClass({
       render : function(){
         return (
           <div className="demo">
@@ -127,9 +127,9 @@
       }
     });
     
-    var ReactContendDemoHtml = <ReactContendDemo />;
+    var ReactContentDemoHtml = <ReactContentDemo />;
     
-    var CONTENTS3 = [ReactContendDemoHtml, "内容2", "内容3", "内容4"];
+    var CONTENTS3 = [ReactContentDemoHtml, "内容2", "内容3", "内容4"];
     
     React.render(
       <Tab navs={NAVS3} contents={CONTENTS3} />, 

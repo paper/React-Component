@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>React-Tab-Demo</title>
+  <link rel="stylesheet" href="../reset.css">
+  <script src="../react-0.12.2/build/react.js"></script>
+  <script src="../react-0.12.2/build/JSXTransformer.js"></script>
+  <style> 
+
+    .mod-tab{
+      padding:10px;
+      border:1px solid #ccc;
+      float:left;
+      clear:both;
+      margin-bottom:10px;
+    }
+    .mod-tab-nav ul{
+      border-bottom:1px solid #ccc;
+    }
+    .mod-tab-nav ul li{
+      float:left;
+      margin:0 10px 0 0;
+    }
+    .mod-tab-nav ul li a{
+      padding:5px 10px;
+      font-size:14px;
+    }
+    .mod-tab-nav ul .cur{
+      border:1px solid #ccc;
+      border-bottom:1px solid #fff;
+      margin-bottom:-1px;
+    }
+    .mod-tab-nav ul .cur a{
+      color:#000;
+    }
+    
+    .mod-tab-content{
+      padding:10px;
+    }
+  </style>
+</head>
+<body>
+  
+  <h3>Example:</h3>
+  <div class="mod-tab">
+    
+    <div class="mod-tab-nav">
+      <ul class="clearfix">
+        <li class="cur"><a href="javascript:;">tab 1</a></li>
+        <li><a href="javascript:;">tab 2</a></li>
+        <li><a href="javascript:;">tab 3</a></li>
+        <li><a href="javascript:;">tab 4</a></li>
+      </ul>
+    </div>
+    
+    <div class="mod-tab-content-wrap">
+      <div class="mod-tab-content">
+        内容1
+      </div>
+      
+      <div class="mod-tab-content" style="display:none;">
+        内容2
+      </div>
+      
+      <div class="mod-tab-content" style="display:none;">
+        内容3
+      </div>
+      
+      <div class="mod-tab-content" style="display:none;">
+        内容4
+      </div>
+    </div>
+    
+  </div>  
+  
+  <br />
+  
+  <script type="text/jsx" src="tab.js"></script>
+  
+  <h3>React Demo(mouseover):</h3>
+  <div id="example"></div>
+  <script type="text/jsx">
+    var NAVS = ["tab 1", "tab 2", "tab 3", "tab 4"];
+    var CONTENTS = ["内容1", "内容2", "内容3", "内容4"];
+    var OPTIONS = {
+      mouseover : true,
+      delay : 100
+    }
+    
+    React.render(
+      <Tab navs={NAVS} contents={CONTENTS} options={OPTIONS} />, 
+      document.getElementById("example")
+    );
+  </script>
+  
+  <br />
+  
+  <h3>React Demo(click):</h3>
+  <div id="example2"></div>
+  <script type="text/jsx">
+    var NAVS2 = ["tab 1", "tab 2", "tab 3", "tab 4"];
+    var CONTENTS2 = ["内容1", "内容2", "内容3", "内容4"];
+    
+    React.render(
+      <Tab navs={NAVS2} contents={CONTENTS2} />, 
+      document.getElementById("example2")
+    );
+  </script>
+  
+</body>
+</html>

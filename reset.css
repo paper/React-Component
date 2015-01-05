@@ -1,0 +1,9 @@
+@chartset "utf-8";
+*{margin:0; padding:0;}
+ul,ol,li{list-style:none;}
+body{padding:20px;font:12px/1.5 arial;}
+a{color:#003399; text-decoration:none;}
+.clearfix{content:"";display:table;clear:both;height:0;}
+.hidden{display:none;}
+.clear{clear:both;}
+br{clear:both;display:block;height:1px;}
